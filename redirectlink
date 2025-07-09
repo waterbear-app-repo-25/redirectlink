@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.2">
+    <title>Background Image with Foreground Box</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        .background {
+            background-image: url('https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_129070000000000001/attachments/119707/guitar-cloud4.jpg');
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .outer-box {
+            background-color: black;
+            padding: 10px;
+            margin-left: 30%;
+        }
+        .inner-box {
+            background-color: white;
+            padding: 5px;
+        }
+        .foreground-box {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 250px; /* Adjust height as needed */
+            width: 500px; /* Adjust width as needed */
+        }
+        .logo {
+            width: 250px;
+            height: auto;
+        }
+        .button {
+            display: inline-block;
+            padding: 37px 45px; /* Increased padding for a bigger button */
+            background-color: #f6dd0d;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 19px; /* Increased font size for better visibility */
+            font-family: 'Segoe UI', sans-serif; /* Set font to Segoe UI */
+            font-weight: bold; /* Make font bold */
+
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="outer-box">
+            <div class="inner-box">
+                <div class="foreground-box">
+                    <img src="https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_129070000000000001/attachments/92279/social-bear-black.jpg" alt="Logo" class="logo">
+                    <a href="https://waterbear.instructure.com/login/saml" class="button">Sign in to Canvas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
